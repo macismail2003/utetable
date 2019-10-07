@@ -1,0 +1,230 @@
+@CHARSET "ISO-8859-1";
+
+/* RN */
+.sapUiBody {
+width: 100%;
+height: 100%;
+margin: 0;
+background-color: #ffffff;
+background:url('../images/login/Login_bgimage.jpg') no-repeat;
+background-size:100% 100%;
+font-family: Arial,Helvetica,sans-serif;
+}
+
+.panel {
+background-color: rgba(255,255,255,0.9); 
+border-radius: 5px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -140px;
+margin-left: -190px;
+padding:40px;
+}
+
+
+.panelChngPswd {
+background-color: rgba(255,255,255,0.9); 
+border-radius: 5px;
+position: fixed;
+top: 45%;
+left: 43%;
+margin-top: -140px;
+margin-left: -190px;
+padding:40px;
+}
+
+
+.marginTop2{
+	margin-top: 2px;
+}
+@media  (min-width: 900px) and (max-width: 1500px){
+       #logo_section  {
+              position: absolute;
+              z-index: 2;
+              width: 71px;
+              margin-left: auto;
+              margin-right: auto;
+              top: 19%;
+              left: 17%;
+              right: 78%;
+              bottom: 16%;
+}
+#logo_section>img{
+       width:71px;
+       height:72px;
+       position:relative;
+}
+
+
+
+#idtxtUsername,#idtxtPassword,#idtxtOldPassword,#idtxtNewPassword,#idtxtConfirmPassword,#idtxtUserID{
+       width:200px;
+       height:43px;
+       border:1px solid #cccccc;
+       border-bottom-right-radius:5px;
+       border-top-right-radius:5px;
+       color:#707277;
+       font-weight: bold;
+       font:14px arial,sans-serif ;
+       margin:0px 0px 7px;
+       
+}
+#idBtnLogin{
+       padding:8px 75px 8px;
+}
+#idUserImg,#idPswdImg{
+       width:45px;
+       height:43px;
+}
+.fontWelcome{
+       color: #707277;
+       font:32px arial,sans-serif ;
+}
+.fontWelcomeRed{
+       color: #cc292b;
+       font:32px arial,sans-serif ;
+       font-weight:bold;
+}
+#idFlexBoxNewUser{
+       position:absolute;
+       bottom:10%;
+       left:43%;
+}
+} /* end of media large devices */
+
+@media (min-width: 496px) and (max-width: 899px) {
+       #logo_section  {
+              position: absolute;
+              z-index: 2;
+              width: 71px;
+              margin-left: auto;
+              margin-right: auto;
+              top: 19%;
+              left: 0%;
+              right: 78%;
+              bottom: 16%;
+}
+#logo_section>img{
+       width:71px;
+       height:72px;
+       position:relative;
+}
+
+/* .panel {
+background-color: rgba(255,255,255,70); 
+background:url('../images/login/login_panel_bg.png') no-repeat; 
+opacity:0.8; 
+border-radius: 5px;
+margin-left:auto;
+margin-right:auto;
+position:absolute;
+top:19%;
+left:23%;
+right:8%;
+bottom:5%;
+padding-top:30px;
+} */
+
+#idtxtUsername,#idtxtPassword{
+       width:200px;
+       height:43px;
+       border:1px solid #cccccc;
+       border-bottom-right-radius:5px;
+       border-top-right-radius:5px;
+       color:#707277;
+       font-weight: bold;
+       font:14px arial,sans-serif ;
+       margin:0px 0px 7px;
+       
+}
+#idBtnLogin{
+       padding:8px 75px 8px;
+}
+#idUserImg,#idPswdImg{
+       width:45px;
+       height:43px;
+}
+.fontWelcome{
+       color: #707277;
+       font:32px arial,sans-serif ;
+}
+.fontWelcomeRed{
+       color: #cc292b;
+       font:32px arial,sans-serif ;
+       font-weight:bold;
+}
+#idFlexBoxNewUser{
+       position:absolute;
+       bottom:10%;
+       left:36%;
+}
+} /* end of media medium devices */
+
+@media (min-width: 319px) and (max-width: 495px) {
+#logo_section  {
+              position: absolute;
+              z-index: 2;
+              width: 71px;
+              margin-left: auto;
+              margin-right: auto;
+              top: 7%;
+              left: 33%;
+              right: 38%;
+              bottom: 16%;
+}
+#logo_section>img{
+       width:71px;
+       height:72px;
+       position:relative;
+}
+
+/* .panel {
+background-color: rgba(255,255,255,70); 
+background:url('../images/login/login_panel_bg.png') no-repeat; 
+opacity:0.8;
+border-radius: 5px;
+margin-left:auto;
+margin-right:auto;
+position:absolute;
+top:25%;
+left:5%;
+right:5%;
+bottom:5%;
+padding-top:30px;
+} */
+
+#idtxtUsername,#idtxtPassword{
+       width:112%;
+       height:38px;
+       border:1px solid #cccccc;
+       border-bottom-right-radius:5px;
+       border-top-right-radius:5px;
+       color:#707277;
+       font-weight: bold;
+       font:14px arial,sans-serif ;
+       margin:0px 0px 7px;
+       
+}
+#idBtnLogin{
+       padding:8px 65px 8px;
+}
+#idUserImg,#idPswdImg{
+       width:45px;
+       height:38px;
+}
+.fontWelcome{
+       color: #707277;
+       font:24px arial,sans-serif ;
+}
+.fontWelcomeRed{
+       color: #cc292b;
+       font:24px arial,sans-serif ;
+       font-weight:bold;
+}
+#idFlexBoxNewUser{
+       position:absolute;
+       bottom:10%;
+       left:28%;
+}
+} /* end of media small devices */

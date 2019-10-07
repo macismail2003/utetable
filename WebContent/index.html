@@ -1,0 +1,187 @@
+<!--
+Information: This file is copied from PGW on 26.09.2014 by Seyed Ismail from Chrome Console
+       and the changes to this file are marked as MAC26092014
+*$*$------------------------------------------------------------------------*
+*$*$ Created By : Seyed Ismail MAC
+*$*$ Created On : 26.09.2014
+*$*$ Reference   : Basis Admin Project
+*$*$ Transport   : 
+*$*$ Tag         : MAC26092014
+*$*$ Purpose     : Alteration in the service URL : serviceUrl_mac
+*$*$--------------------------------------------------------------------- 
+ -->
+ 
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<TITLE>Seaco Dashboard</TITLE>
+    <script>
+
+    var Timest;
+
+    //check to find the system
+    var HomeUrlHash = window.location.href.replace(window.location.hash,'');
+    var urlSplitHome = HomeUrlHash.split('/');
+    if(urlSplitHome[2] == "newseaweb.seacoglobal.com" || urlSplitHome[2] == "seaweb.seacoglobal.com"){
+       var auth_serviceUrl = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_REP_SRV";
+       var service = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_REP_SRV";
+       var serviceUTE = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_ERP_SRV";
+       //var netAService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_BWDASH_2_SRV/";
+       //var netALink = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_BWDASH_2_SRV/ZPM_M04_YGES_ZPM_M04_Q0001UResults";
+       var netAService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netALink = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/netas?$filter=Maxrows eq 6";
+       var netAServiceFull = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netALinkFull = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/netas";
+       var netATBC = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATBCService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '1'";
+       var netATBD = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATBDService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '2'";
+       var netATRC = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATRCService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '3'";
+       var netATRD = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATRDService = "https://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '4'";
+       var netAORT = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netAORTService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/orts?$filter=LsQnum eq '2'";
+       var netAORTFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/orts";
+       var netAOBK = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netAOBKService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/obks?$filter=LsQnum eq '2'";
+       var netAOBKFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/obks";
+    }
+    else{
+       var auth_serviceUrl = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_REP_SRV";
+       var service = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_REP_SRV";
+       var serviceUTE = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZUTIL_ERP_SRV";
+       var netAService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netALink = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/netas?$filter=Maxrows eq 6";
+       var netAServiceFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netALinkFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/netas";
+       var netATBC = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATBCService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '1'";
+       var netATBD = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATBDService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '2'";
+       var netATRC = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATRCService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '3'";
+       var netATRD = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netATRDService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/top10bycusts?$filter= LsQnum eq '4'";
+       var netAORT = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netAORTService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/orts?$filter=LsQnum eq '2'";
+       var netAORTFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/orts";
+       var netAOBK = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV";
+       var netAOBKService = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/obks?$filter=LsQnum eq '2'"
+       var netAOBKFull = "http://" + urlSplitHome[2] + "/sap/opu/odata/sap/ZNW_UI5_TBC_TRC_Q00013_SRV/obks";
+    }
+
+    var isMobile = {
+          Android: function() {
+              return navigator.userAgent.match(/Android/i);
+          },
+          BlackBerry: function() {
+              return navigator.userAgent.match(/BlackBerry/i);
+          },
+          iOS: function() {
+              return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+          },
+          Opera: function() {
+              return navigator.userAgent.match(/Opera Mini/i);
+          },
+          Windows: function() {
+              return navigator.userAgent.match(/IEMobile/i);
+          },
+          any: function() {
+              return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+          }
+      };
+
+     </script>   
+<!-- <title>SEACO SEAWEB</title> -->
+<!-- Include jQuery Library important 
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+
+<!-- Include jBox files -->
+
+<script src="resources/sap-ui-core.js" type="text/javascript"
+    id="sap-ui-bootstrap"
+    data-sap-ui-libs="sap.m,sap.ui.unified,sap.viz,sap.ui.table,sap.ui.ux3,sap.ca.ui"
+    data-sap-ui-theme="sap_bluecrystal">
+</script>
+
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/stylesheetmediumdevice.css">
+<link rel="stylesheet" href="css/stylesheetsmalldevice.css">
+<link rel="stylesheet" href="css/standard1.css">
+<link rel="stylesheet" href="css/tableFormat.css">
+<link rel="stylesheet" href="css/token-input.css" type="text/css" />
+
+
+<script src="js/utility.js"></script> 
+<script src="js/dateformatter.js"></script>
+<script src="js/loggedInUser.js"></script>
+<script src="js/jsondata.js"></script>
+
+<!-- <script src="js/Autocomplete/AutoCompleteRenderer.js"></script> -->
+<script src="js/WelcomePageView.js"></script>
+
+ <!-- Import from Excel -->
+<script src="js/xls.js"></script>
+
+<!-- Map Start -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<!-- Map End -->
+
+<script src="js/createDashNew.js"></script>
+<script src="js/utilrep/utilrep.js"></script>
+<script src="js/utilrep/utilclass.js"></script> 
+
+ <!-- System Maintenance 
+
+<script src="js/neta/neta.js"></script>
+<script src="js/neta/napage.js"></script>
+
+
+<script src="js/topbookingsbycust/topbookcust.js"></script>
+<script src="js/topbookingsbydepot/topbookdepo.js"></script>
+<script src="js/topreturnbycust/topretucust.js"></script>
+<script src="js/topreturnbydepot/topretudepo.js"></script>
+
+<script src="js/outstanding/outstandingBookings.js"></script>
+<script src="js/outstanding/outstandingReturns.js"></script>
+<script src="js/outstanding/outstandingBookingsFull.js"></script>
+<script src="js/outstanding/outstandingReturnsFull.js"></script>  -->
+<script>
+
+
+sap.ui.localResources("js");
+jQuery.sap.require("sap.ui.commons.MessageBox");
+jQuery.sap.require("sap.m.MessageToast");
+
+  try {
+    sap.ui.getCore().loadLibrary("sap.ui.commons");
+  } catch (e) {
+    alert("This test page requires the library 'sap.ui.commons' which is not available.");
+    throw (e);
+  }
+  var busyDialog = (busyDialog) ? busyDialog : new sap.m.BusyDialog('busy',
+  {
+    text : 'Loading Dashboard... \n0% Completed',
+    customIcon : 'images/ajax-loader.gif',
+    title : 'Loading...'
+  });
+
+      var widthOfDoc = $(window).width();
+      var objUtil = new utility();
+      objUtil.loadAppGS();
+
+</script>
+</head>
+
+<body class="sapUiBody" role="application">
+
+
+  <div id="wrapper"></div>
+
+</body>
+</html>

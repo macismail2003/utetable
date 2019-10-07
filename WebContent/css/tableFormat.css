@@ -1,0 +1,58 @@
+#idTableNASummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+.tooltip {
+    display:none;
+    position:absolute;
+    border:1px solid #333;
+    background-color: blue;
+    border-radius:5px;
+    padding:10px;
+    color:#fff;
+    font-size:12px Arial;
+}
+		
+.totalColor{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idTableNAPSummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idTableTRDSummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idTableTBDSummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idTableTBCSummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idTableTRCSummary-rows-row0{
+	background-color: #b8e0e1;
+	font-weight: bold !important;
+}
+
+#idNapFilter{
+	color: red;
+}
+
+#idLFilter{
+	color: red;
+}
+
+#idBackNap #idBackutc{
+	font:13px arial,sans-serif ;
+}
+
